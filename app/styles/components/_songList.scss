@@ -1,0 +1,22 @@
+.songList {
+  display: flex;
+  height: 290px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.song-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-image {
+  width: 150px;
+  height: 150px;
+  max-width: none;
+  margin-right: 15px;
+}
+
+.song-description {
+
+}

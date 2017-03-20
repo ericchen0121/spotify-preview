@@ -4,15 +4,15 @@ const eachSong = (props) => {
   const {album, name} = props;
   const albumImage = album.images[0];
   return (
-    <div>
-      <img src={albumImage.url} />
-      <span>Name: {name}</span>
+    <div className='song-list-item'>
+      <img className='song-image' src={albumImage.url} />
+      <span className='song-description'>Name: {name}</span>
     </div>
   )
 }
 
 const SongList = (props) => (
-    <div>
+    <div className='songList'>
       {props.songList.map((songData, index) => {
         return (
           <div key={songData.uri} onClick={() => props.onSelectSong(index)}>

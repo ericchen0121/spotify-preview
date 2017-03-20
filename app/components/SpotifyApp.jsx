@@ -36,9 +36,8 @@ export class SpotifyApp extends React.Component {
     return (
       <div>
         <div className='column row'>
-          <div className='column small-centered medium-6'>
+          <div className='column small-centered'>
             <SearchBar onUpdateText={this.handleUpdateText} fetchSongs={this.fetchSongs}/>
-            <p>{text}</p>
             {tracks[activeTrackIndex] && <SongItem songData={tracks[activeTrackIndex]}/> }
             <SongList songList={tracks} onSelectSong={this.handleSelectSong}/>
           </div>

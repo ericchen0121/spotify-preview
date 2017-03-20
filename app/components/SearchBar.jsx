@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SearchBar = (props) => (
-  <div>
+  <div className='small-centered'>
     <input onChange={(e) => props.onUpdateText(e.target.value)} />
     <button className='button' onClick={props.fetchSongs}>Search</button>
   </div>
